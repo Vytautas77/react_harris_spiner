@@ -3,6 +3,7 @@ import Character from "../Character/Character";
 
 const Characters = ({ characters, setCharacters }) => {
   const removeCard = (id) => {
+    console.log(id);
     const filteredCharacters = characters.filter((character) => {
       return character.id !== id;
     });
