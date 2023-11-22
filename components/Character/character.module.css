@@ -1,0 +1,17 @@
+.image {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+.imgPlaceHolder {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}

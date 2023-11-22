@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Characters from "../components/Characters/Characters";
+import Spinner from "../components/Spinner/Spinner";
 
 const Index = () => {
   // Fix: Use parentheses for useState
@@ -26,7 +27,12 @@ const Index = () => {
   return (
     <>
       <Header />
-      <Characters characters={characters} />
+      {characters ? (
+        <Characters characters={characters} setCharacters={setCharacters} />
+      ) : (
+        <Spinner />
+      )}
+
       <Footer />
     </>
   );
