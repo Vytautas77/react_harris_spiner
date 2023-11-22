@@ -1,15 +1,14 @@
 import Image from "next/image";
 import styles from "./character.module.css";
-const Character = ({ name, imgUrl }) => {
+const Character = ({ name, imgUrl, removeCard, id }) => {
   const onPictureClick = () => {
-    console.log(name);
+    removeCard(id);
   };
   return (
     <div onClick={onPictureClick}>
       <div>{name}</div>
       {imgUrl ? (
         <>
-          {" "}
           <Image
             className={styles.image}
             src={imgUrl}
