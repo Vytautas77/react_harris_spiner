@@ -15,6 +15,7 @@ const Character = ({ name, imgUrl, removeCard, id }) => {
             width={300}
             height={300}
             alt="character photos"
+            loading="eager"
           />
         </>
       ) : (

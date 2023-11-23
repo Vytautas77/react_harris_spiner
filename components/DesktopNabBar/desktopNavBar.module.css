@@ -1,0 +1,21 @@
+.desktopNavBar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.desktopNavBar ul li a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+}
+.desktopNavBar ul li a:hover {
+  color: #bf9d2e;
+  border-bottom: 1px solid #bf9d2e;
+}
+
+@media screen and (max-width: 767px) {
+  .desktopNavBar {
+    display: none;
+  }
+}
