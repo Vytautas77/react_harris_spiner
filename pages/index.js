@@ -4,6 +4,8 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Characters from "../components/Characters/Characters";
 import Spinner from "../components/Spinner/Spinner";
+import Button from "@/components/Button/Button";
+import Main from "../components/Main/main";
 
 const Index = () => {
   // Fix: Use parentheses for useState
@@ -27,6 +29,20 @@ const Index = () => {
   return (
     <>
       <Header />
+      <Button
+        onButtonClick={() => {
+          console.log("Button");
+        }}
+      />
+      <Button />
+      <Button
+        type="DANGER"
+        onButtonClick={() => {
+          console.log("red");
+        }}
+      />
+      <Button type="SUCCESS" />
+      <Main />
       {characters ? (
         <Characters characters={characters} setCharacters={setCharacters} />
       ) : (

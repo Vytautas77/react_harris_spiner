@@ -1,0 +1,21 @@
+.infoBox {
+  height: 100%;
+  width: 15rem;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.box1 {
+  border: none;
+  background-color: gold;
+  border-radius: 8px;
+}

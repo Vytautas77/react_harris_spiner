@@ -20,7 +20,20 @@ const Character = ({ name, imgUrl, removeCard, id }) => {
         </>
       ) : (
         <>
-          <div className={styles.imgPlaceHolder}>No photo</div>
+          <div
+            style={{
+              width: "250px",
+              height: "350px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "2rem",
+              border: "1px solid black",
+              borderRadius: "0.5rem",
+            }}
+          >
+            No photo
+          </div>
         </>
       )}
     </div>
